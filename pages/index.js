@@ -7,7 +7,10 @@ import {
 } from "react-instantsearch-dom";
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 
-const searchClient = instantMeiliSearch("http://127.0.0.1:7700");
+const searchClient = instantMeiliSearch(
+    "http://eumpstdziw.us05.qoddiapp.com/",
+    process.env.MEILI_MASTER_KEY
+);
 
 const App = () => (
     <InstantSearch indexName="movies" searchClient={searchClient}>
