@@ -1,3 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+    env: {
+        MEILI_MASTER_KEY: process.env.MEILI_MASTER_KEY,
+    },
+};
