@@ -8,7 +8,7 @@ import {
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 
 const searchClient = instantMeiliSearch(
-    "http://eumpstdziw.us05.qoddiapp.com/",
+    "http://hvlrjtupcw.us05.qoddiapp.com",
     process.env.MEILI_MASTER_KEY
 );
 
