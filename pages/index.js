@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const client = new MeiliSearch({
     host: "http://hvlrjtupcw.us05.qoddiapp.com/",
     headers: {
-        Authorization: `Bearer ${process.env.MEILI_API_KEY}`,
+        Authorization: `Bearer ${process.env.MEILI_MASTER_KEY}`,
         "Content-Type": "application/json",
     },
 });
