@@ -1,24 +1,51 @@
-import React from "react";
-import {
-    InstantSearch,
-    SearchBox,
-    Hits,
-    Highlight,
-} from "react-instantsearch-dom";
-import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
+import { MeiliSearch } from "meilisearch";
+import { useEffect, useState } from "react";
 
-const searchClient = instantMeiliSearch(
-    "http://hvlrjtupcw.us05.qoddiapp.com",
-    process.env.MEILI_MASTER_KEY
-);
+const client = new MeiliSearch({
+    host: "http://hvlrjtupcw.us05.qoddiapp.com/",
+    headers: {
+        Authorization: `Bearer ${process.env.MEILI_API_KEY}`,
+        "Content-Type": "application/json",
+    },
+});
 
-const App = () => (
-    <InstantSearch indexName="movies" searchClient={searchClient}>
-        <SearchBox />
-        <Hits hitComponent={Hit} />
-    </InstantSearch>
-);
+const App = () => {
+    const [movies, setMovies] = useState([]);
+    const [search, setSearch] = useState("");
 
-const Hit = ({ hit }) => <Highlight attribute="name" hit={hit} />;
+    useEffect(() => {
+        //search movie index based on search value
+        client
+            .index("movies")
+            .search(search)
+            .then((results) => {
+                setMovies(results.hits);
+            });
+    }, [search]);
+
+    return (
+        <div className="App">
+            <div className="search">
+                <input
+                    type="text"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+            </div>
+
+            <div className="movies">
+                {movies?.map((movie) => (
+                    <div className="movie" key={movie.id}>
+                        <div className="movie-info">
+                            <p>{movie.id}</p>
+                            <h2>{movie.name}</h2>
+                            <p>{movie.year}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
 
 export default App;
