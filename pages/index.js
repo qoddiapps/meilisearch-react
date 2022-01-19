@@ -1,4 +1,5 @@
 import { MeiliSearch } from "meilisearch";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const client = new MeiliSearch({
@@ -36,10 +37,15 @@ const App = () => {
             <div className="movies">
                 {movies?.map((movie) => (
                     <div className="movie" key={movie.id}>
+                        <h2>
+                            {movie.id} - {movie.name}
+                        </h2>
+
                         <div className="movie-info">
-                            <p>{movie.id}</p>
-                            <h2>{movie.name}</h2>
+                            <p>{movie.imdb_id}</p>
                             <p>{movie.year}</p>
+                            <p>{movie.director}</p>
+                            <p>{movie.actors}</p>
                         </div>
                     </div>
                 ))}

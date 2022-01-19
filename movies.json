@@ -1,138 +1,47 @@
 [
     {
         "id": 1,
-        "name": "Lord of the Rings",
-        "year": "2001"
+        "imdb_id": "tt0111161",
+        "name": "The Shawshank Redemption",
+        "year": 1994,
+        "director": "Frank Darabont",
+        "actors": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg"
     },
     {
         "id": 2,
-        "name": "Harry Potter",
-        "year": "2001"
+        "imdb_id": "tt0068646",
+        "name": "The Godfather",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "actors": "Marlon Brando, Al Pacino, James Caan, Richard S. Castellano",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
     },
     {
         "id": 3,
-        "name": "Star Wars",
-        "year": "1977"
+        "imdb_id": "tt0071562",
+        "name": "The Godfather: Part II",
+        "year": 1974,
+        "director": "Francis Ford Coppola",
+        "actors": "Al Pacino, Robert De Niro, Robert Duvall, Diane Keaton",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDc2NTM3MzM2N15BMl5BanBnXkFtZTcwMTA5Mzg3OA@@._V1_SX300.jpg"
     },
     {
         "id": 4,
-        "name": "The Hobbit",
-        "year": "1937"
+        "imdb_id": "tt0468569",
+        "name": "The Dark Knight",
+        "year": 2008,
+        "director": "Christopher Nolan",
+        "actors": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
     },
     {
         "id": 5,
-        "name": "Rango",
-        "year": "2011"
-    },
-    {
-        "id": 6,
-        "name": "The Hunger Games",
-        "year": "2012"
-    },
-    {
-        "id": 7,
-        "name": "The Hobbit: An Unexpected Journey",
-        "year": "2012"
-    },
-    {
-        "id": 8,
-        "name": "The Hobbit: The Desolation of Smaug",
-        "year": "2013"
-    },
-    {
-        "id": 9,
-        "name": "The Hobbit: The Battle of the Five Armies",
-        "year": "2014"
-    },
-    {
-        "id": 10,
-        "name": "The Hobbit: The Return of the King",
-        "year": "2012"
-    },
-
-    {
-        "id": 11,
-        "name": "Ironman",
-        "year": "2008"
-    },
-    {
-        "id": 12,
-        "name": "Ironman 2",
-        "year": "2010"
-    },
-    {
-        "id": 13,
-        "name": "Ironman 3",
-        "year": "2013"
-    },
-    {
-        "id": 14,
-        "name": "Ironman 4",
-        "year": "2014"
-    },
-    {
-        "id": 15,
-        "name": "Ironman 5",
-        "year": "2015"
-    },
-    {
-        "id": 16,
-        "name": "Ironman 6",
-        "year": "2016"
-    },
-    {
-        "id": 17,
-        "name": "Ironman 7",
-        "year": "2017"
-    },
-    {
-        "id": 18,
-        "name": "Ironman 8",
-        "year": "2018"
-    },
-    {
-        "id": 19,
-        "name": "Ironman 9",
-        "year": "2019"
-    },
-    {
-        "id": 20,
-        "name": "Ironman 10",
-        "year": "2020"
-    },
-    {
-        "id": 21,
-        "name": "Ironman 11",
-        "year": "2021"
-    },
-    {
-        "id": 22,
-        "name": "Ironman 12",
-        "year": "2022"
-    },
-    {
-        "id": 23,
-        "name": "Ironman 13",
-        "year": "2023"
-    },
-    {
-        "id": 24,
-        "name": "Ironman 14",
-        "year": "2024"
-    },
-    {
-        "id": 25,
-        "name": "Ironman 15",
-        "year": "2025"
-    },
-    {
-        "id": 26,
-        "name": "Ironman 16",
-        "year": "2026"
-    },
-    {
-        "id": 27,
-        "name": "Ironman 17",
-        "year": "2027"
+        "imdb_id": "tt1229340",
+        "name": "12 Angry Man",
+        "year": 1957,
+        "director": "Sidney Lumet",
+        "actors": "Humphrey Bogart, Ingrid Bergman, Walter Huston, Paul Williams",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwMzQxMzQxMl5BMl5BanBnXkFtZTcwMzQxMzk3OA@@._V1_SX300.jpg"
     }
 ]
